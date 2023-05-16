@@ -1,0 +1,100 @@
+.review-main {
+    background-color: white;
+    height: 700px;
+    width: 100%;
+
+    .active{
+        background-color: #210B6E;
+        color: white;
+    }
+
+    .review-content {
+        text-align: center;
+        padding-top: 55px;
+        height: 100%;
+
+        .rating-star{
+            color: #210B6E;
+            padding-bottom: 20px;
+        }
+
+        .header {
+            height: 100px;
+
+            h4 {
+                font-weight: 700;
+                font-size: 13px;
+            }
+
+            h2 {
+                font-weight: 700;
+
+                span {
+                    color: #210B6E;
+                }
+            }
+
+            .header-icon {
+                font-size: 30px;
+            }
+        }
+
+
+
+        .carousel-parent {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            padding-top: 45px;
+
+            .carousel-main {
+                width: 67%;
+                height: 100%;
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                }
+                @media screen and (max-width:425px) {
+                    width: 100%;
+                }
+
+                .p-carousel-content {
+                    height: 100%;
+
+                    .p-carousel-container {
+                        height: 100%;
+
+                        .p-carousel-item {
+                            padding: 0px 5px 0px 5px;
+                            height: 100%;
+
+                            .card {
+                                height: 360px;
+
+                                .avatar-parent {
+                                    position: relative;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+
+                                    .avatar-circle {
+                                        position: absolute;
+                                        top: -32px;
+                                        width: 74px;
+                                        height: 66px;
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+
+}

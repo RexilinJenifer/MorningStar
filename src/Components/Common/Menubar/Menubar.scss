@@ -1,0 +1,94 @@
+.menu {
+    background-color: #020202;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --bs-link-hover-color: red;
+
+    @media screen and (max-width: 425px) {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .desktop-menu {
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+
+        .desk-menu {
+            .menus {
+                .link {
+                    padding: 30px;
+                    text-decoration: none;
+
+                    @media screen and (max-width: 1024px) {
+                        padding: 16px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        padding: 8px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 14px;
+                        padding: 4px;
+                    }
+                }
+
+                .none {
+                    color: white;
+                }
+
+                .active {
+                    color: red;
+                }
+
+                .link:hover {
+                    color: red;
+                }
+            }
+
+        }
+
+    }
+
+    .mobile-menu {
+        @media screen and (max-width: 2560px) and (min-width: 768px) {
+            display: none;
+        }
+
+        color: white;
+        font-size: 24px;
+
+        .mob-menu {
+            display: flex;
+            flex-direction: column;
+
+            .menus {
+                .link {
+                    font-size: 14px;                    
+                    text-decoration: none;
+                }
+
+                .none {
+                    color: white;
+                }
+
+                .active {
+                    color: red;
+                }
+
+                .link:hover {
+                    color: red;
+                }
+
+            }
+        }
+    }
+}
+
+.expanded {
+    height: 400px !important;
+}

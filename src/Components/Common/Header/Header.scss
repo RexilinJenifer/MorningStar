@@ -1,0 +1,130 @@
+.main-header {
+    background-color: #020202;
+    height: 62px;
+    width: 100%;
+
+    .row-header {
+        height: 100%;
+
+
+
+        .col-header-one {
+            height: 100%;
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+            .header-top-left {
+                height: 72px;
+                position: relative;
+                z-index: 1;
+                // padding: 10px 316px 0px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 40px;
+
+              
+                @media screen and (min-width: 1025px) {
+                    padding: 10px 316px 0px 0px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #ffffff;
+
+                    @media screen and (max-width: 1000px) {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .header-top-left:before {
+                position: absolute;
+                background: #210B6E none repeat scroll 0 0;
+                content: "";
+                top: 0;
+                right: 15%;
+                width: 2030px;
+                height: 100%;
+                -webkit-transform: skewX(45deg);
+                transform: skewX(-50deg);
+                z-index: -1;
+            }
+        }
+
+        .col-header-two {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .content {
+                width: 100%;
+                height: 100%;
+                color: white;
+                display: flex;
+                align-items: center;
+
+                .sub-content {
+                    display: flex;
+                    // justify-content: center;
+
+                    img {
+                        height: 35px;
+
+                    }
+
+                    .region {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 12px;
+                        margin-left: 12px;
+
+
+                        @media screen and (max-width: 1260px) and (min-width: 768px) {
+                            display: none;
+                        }
+
+                        span:first-child {
+                            font-weight: 800;
+                        }
+                    }
+
+                    .mail {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                }
+
+                .icons {
+                    @media screen and (max-width: 991px) and (min-width: 767px) {
+                        display: none;
+                    }
+                    @media screen and (max-width: 425px) {
+                        display: none;
+                    }
+                    @media screen and (min-width: 1025px) {
+                        padding-left: 28px;
+                    }
+                    a {
+                        color: white;
+                        padding: 7px;
+                        @media screen and (max-width: 1024px) {
+                            padding: 4px;
+                        }
+                        font-size: 24px;
+                    }
+                    a:hover{
+                        color:red;
+                    }
+
+                }
+
+            }
+
+        }
+
+
+    }
+}

@@ -1,0 +1,43 @@
+
+//Golbl elements
+@import url('bootstrap/dist/css/bootstrap.min.css');
+@import url('primeicons/primeicons.css');
+@import url('primereact/resources/primereact.min.css');
+@import url('primereact/resources/themes/lara-light-indigo/theme.css');
+
+// common components
+@import url('/src/Components/Common/Header/Header.scss');
+@import url('/src/Components/Common/Subheader/Subheader.scss');
+@import url('/src/Components/Common/Menubar/Menubar.scss');
+
+
+@import URL('/src/Components/Common/Footer/Footer.scss');
+
+//page level css
+@import url('/src/Pages/Home/Home.scss');
+@import url('/src/Pages/Gallery/Gallery.scss');
+@import url('/src/Pages/Contactus/Contact.scss');
+@import url('/src/Pages/Carrental/Cartypes.scss');
+@import url('/src/Pages/Blogs/Blogs.scss');
+@import url('/src/Pages/Fleets/Fleets.scss');
+@import url('/src/Pages/Team/Team.scss');
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;    
+    // overflow-x: hidden;
+    @media screen and (max-width:768px) {
+        width:100%
+    }
+    .row{
+        margin-right: 0px !important;
+    }
+    .card{
+        box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.2);
+    }
+
+}
+

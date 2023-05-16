@@ -1,0 +1,77 @@
+.car-content-main {
+    background-color: #6c757d36;
+    font-family: sans-serif;
+    padding: 0px 150px 0px 150px;
+
+    @media screen and (max-width: 425px) {
+        padding: 0px 2px 0px 18px;
+
+    }
+
+    .car-content-header {
+        padding-top: 50px;
+        height: 120px;
+        text-align: center;
+
+        h3 {
+            color: #210B6E;
+        }
+
+        h2 {
+            font-size: 35px;
+            font-weight: 700;
+
+            @media screen and (max-width: 425px) {
+                font-size: 26px;
+        
+            }
+        }
+
+
+    }
+
+
+
+    .car-content-row {
+        text-align: center;
+        padding-top: 12px;
+        display: flex;
+        justify-content: center;
+
+        .car-content-col {
+            padding: 0px 20px 0px 20px;
+
+
+
+
+            .content {
+
+                .m-icon {
+                    font-size: 50px;
+                    color: #210B6E;
+                }
+
+                .content-area {
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 24px;
+                        padding-top: 21px;
+
+                    }
+
+                    p {
+                        padding-top: 15px;
+                        padding-bottom: 86px;
+
+                        @media screen and (max-width:768px) {
+                            font-size: 14px;
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
