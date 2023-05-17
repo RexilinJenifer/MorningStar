@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo ,useEffect} from 'react'
 //components
 import Aboutus from './Aboutus/Aboutus'
 import Article from './Article/Article'
@@ -14,6 +14,11 @@ interface IHome {
 
 }
 const Home: React.FC<IHome> = () => {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+
     return (
         <>
             <Slide />

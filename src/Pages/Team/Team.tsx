@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo, useEffect } from 'react'
 import { FaGreaterThan } from "react-icons/fa";
 import { Col, Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
@@ -10,6 +10,11 @@ interface ITeam {
 }
 
 const Team: React.FC<ITeam> = (props) => {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+    
     return (
         <div className='team-main'>
             <div className='team-home'>

@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo, useEffect } from 'react'
 import { FaGreaterThan } from "react-icons/fa";
 import { Col, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
@@ -15,6 +15,11 @@ interface IContact {
 }
 
 const Contact: React.FC<IContact> = (props) => {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+    
     return (
         <div className='Contact-main'>
             <div className='Contact-home'>

@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo, useEffect } from 'react'
 import { FaGreaterThan } from "react-icons/fa";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -19,7 +19,10 @@ interface IBlogs {
 }
 const Blogs: React.FC<IBlogs> = (props) => {
 
-    const paginationData = []
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+    
     return (
         <div className='Blog-main'>
             <div className='Blog-home'>

@@ -1,4 +1,4 @@
-import React, { memo, useRef, useState } from 'react'
+import React, { memo, useEffect, useRef, useState } from 'react'
 import { FaGreaterThan } from "react-icons/fa";
 import { Galleria } from 'primereact/galleria';
 import { Col, Row } from 'react-bootstrap';
@@ -365,6 +365,10 @@ const Contact: React.FC<IGallery> = (props) => {
         },
     ];
 
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+    
 
     return (
         <div className='gallery-main'>
