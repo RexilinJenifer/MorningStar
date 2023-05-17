@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from 'react'
+import React, { memo, useEffect, useState, useLayoutEffect } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import { Link, useLocation } from 'react-router-dom'
 import { Sidebar } from 'primereact/sidebar';
@@ -17,6 +17,23 @@ const Menubar: React.FC<IMenubar> = (props) => {
   useEffect(() => {
     setKey(location.pathname)
   }, [location])
+
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+    return () => {
+      window.removeEventListener('scroll', isSticky);
+    };
+  });
+
+  const isSticky = () => {
+    const header: any = document.querySelector('.menu');
+    const scrollTop = window.scrollY;
+    scrollTop >= 188 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
+  };
+
+  useLayoutEffect(() => {
+    isSticky();
+  }, [visible])
 
   const menus = (
     <Nav as="ul" activeKey={key} className={visible ? 'mob-menu' : 'desk-menu'}>

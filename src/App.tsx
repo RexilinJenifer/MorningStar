@@ -12,6 +12,7 @@ import Contact from './Pages/Contactus/Contact';
 import Blogs from './Pages/Blogs/Blogs';
 import Fleets from './Pages/Fleets/Fleets';
 import Team from './Pages/Team/Team';
+import { AiFillCaretUp } from 'react-icons/ai';
 
 const App = () => {
   return (
@@ -29,9 +30,11 @@ const App = () => {
         <Route path='/Gallery' element={<Gallery />} />
         <Route path='/Blogs' element={<Blogs />} />
         <Route path='/Contactus' element={<Contact />} />
-      </Routes>
-      {/* <Gallery /> */}
+      </Routes>    
       <Footer />
+      <span className='scroll-to-top' onClick={() => window.scrollTo(0, 0)}>
+        <AiFillCaretUp />
+      </span>
     </div>
   );
 }
