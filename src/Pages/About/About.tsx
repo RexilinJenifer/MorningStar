@@ -15,6 +15,7 @@ import subcar from "../../Assets/Images/carlist2.png"
 import art1 from "../../Assets/Images/art1-image.jpg"
 import art2 from "../../Assets/Images/art2-image.jpg"
 import art3 from "../../Assets/Images/art3-image.jpg"
+import emp1 from '../../Assets/Images/emp1.jpeg'
 
 
 interface IAbout {
@@ -25,6 +26,115 @@ const Booking: React.FC<IAbout> = (props) => {
 
     const [aboutActiveKey, setAboutActiveKey] = useState("OUR_MISSION");
     const [yearsKey, setYearsKey] = useState("2000-2005")
+
+    const responsiveOptions = [
+        {
+            breakpoint: '1199px',
+            numVisible: 1,
+            numScroll: 1
+        },
+        {
+            breakpoint: '991px',
+            numVisible: 2,
+            numScroll: 1
+        },
+        {
+            breakpoint: '767px',
+            numVisible: 1,
+            numScroll: 1
+        }
+    ];
+
+    const products = [
+        {
+            id: '1000',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },
+        {
+            id: '1001',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },
+        {
+            id: '1002',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },
+        {
+            id: '1003',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },
+        {
+            id: '1004',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },
+        {
+            id: '1005',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },
+    ]
+
+
+    const productTemplate = (product: any) => {
+        return (
+            <div className='about-team'>
+                <Card >
+                    <Card.Img variant="top" src={emp1} />
+                    <Card.Body>
+                        <Card.Title>Member Name</Card.Title>
+                        <Card.Text>Specialization</Card.Text>
+                    </Card.Body>
+                </Card>
+            </div>
+
+        );
+    };
 
 
     return (
@@ -39,17 +149,21 @@ const Booking: React.FC<IAbout> = (props) => {
                 <Col xl={6}>
                     <div className='about-content'>
                         <h4>About Us</h4>
-                        <h2>We Are Committed To Provide Safe Ride Solutions</h2>
-                        <p className='para'>Welcome to Morning Star Rental Cars Dubai, where every mile is a memory!
-                            Morning Star Rental Cars is a UAE-based rental car company that offers car rental and hire services throughout the country. Established in 2000, we have steadily grown over the years and have become one of the most sought-after rental car companies in the UAE. Our success is attributed to our ease of service and flexibility, which are tailored to meet our customers' demands. Our budgeted rates are another highlight, and we always strive to provide our customers with the best value for their money. With Morning Star Rental Cars, you can experience Dubai differently and create unforgettable memories. Come and experience the Morning Star difference today!
+                        <h2>Explore Dubai with Morning Star- Ride in Luxury and Style!</h2>
+                        <p className='para'>We are Morning Star, a UAE-based car rental company that provides services throughout the country. Since our establishment in 2000, there has been a steady growth and we are one of the well-known car rental companies in the UAE.
+
+                            We offer our customers a wide range of vehicles at competitive rates and with efficient customer service. Our aim is to provide quality, safe and reliable vehicles to our customers at an affordable price.
+
+                            Our team consists of highly trained professionals who are committed to providing excellent customer service every time you call us. We strive to make your travels hassle free and enjoyable, which is why we provide you with a wide range of vehicles at competitive rates.
+
                         </p>
 
                         <div className='about-list'>
                             <ul>
-                                <li><span className='icon-check'><IoMdCheckboxOutline /></span>Convenience at its best</li>
-                                <li><span className='icon-check'><IoMdCheckboxOutline /></span>Experience the comfort of driving</li>
-                                <li><span className='icon-check'><IoMdCheckboxOutline /></span>Friendly & Professional Staff</li>
-                                <li><span className='icon-check'><IoMdCheckboxOutline /></span>Affordable rates for all budgets</li>
+                                <li><span className='icon-check'><IoMdCheckboxOutline /></span>High Quality, Low Prices</li>
+                                <li><span className='icon-check'><IoMdCheckboxOutline /></span>Wide selection of cars</li>
+                                <li><span className='icon-check'><IoMdCheckboxOutline /></span>Excellent customer service</li>
+                                <li><span className='icon-check'><IoMdCheckboxOutline /></span>Trusted rental company</li>
                             </ul>
 
                         </div>
@@ -71,7 +185,8 @@ const Booking: React.FC<IAbout> = (props) => {
                                     <>
                                         <Card.Title>Our Mission</Card.Title>
                                         <Card.Text>
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus aperiam minima repellendus. Numquam neque reiciendis ullam mollitia. Quod, inventore placeat!
+                                            At Morning Star, we strive to provide our customers with the most dependable and safe rental cars at an unbeatable price. We believe in a fast and hassle-free process that’s tailored to your needs and preferences.
+
                                         </Card.Text>
                                     </>
                                 ) :
@@ -80,14 +195,16 @@ const Booking: React.FC<IAbout> = (props) => {
                                         <>
                                             <Card.Title>Our Vission</Card.Title>
                                             <Card.Text>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus aperiam minima repellendus. Numquam neque reiciendis ullam mollitia. Quod, inventore placeat!
+                                                We want to be the go-to car rental company in Dubai, providing quality service and unbeatable value for our customers. We are committed to providing a stress-free rental experience that’s easy, secure, and fast.
+
                                             </Card.Text>
                                         </>
                                     ) : (
                                         <>
                                             <Card.Title>Values</Card.Title>
                                             <Card.Text>
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus aperiam minima repellendus. Numquam neque reiciendis ullam mollitia. Quod, inventore placeat!
+                                                At Morning Star, we value safety, reliability, convenience, and affordability above all else. We guarantee a smooth customer experience that is always tailored to your needs.
+
                                             </Card.Text>
                                         </>
                                     )
@@ -161,6 +278,16 @@ const Booking: React.FC<IAbout> = (props) => {
             <div className='team-experts'>
                 <h4>Experts</h4>
                 <h2>Our Members</h2>
+
+                <div className='carousel-parent'>
+                    <Carousel
+                        className='carousel-main'
+                        value={products}
+                        numVisible={3}
+                        numScroll={3}
+                        responsiveOptions={responsiveOptions}
+                        itemTemplate={productTemplate} />
+                </div>
             </div>
 
             <div className='about-subscribe-main'>
