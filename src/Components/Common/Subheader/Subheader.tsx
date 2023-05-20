@@ -28,14 +28,14 @@ const Subheader: React.FC<ISubheader> = (props) => {
             <ImLocation />
             <div className='content-details'>
               <span>Address</span>
-              <span>Melbourne City, UAE</span>
+              <span>20 A St - Al Karama, Dubai, UAE</span>
             </div>
           </div>
         </Col>
         <Col  className='booked'>
           <div className='car-book'>
-            <span className='offer-btn-1'>Book a Car</span>
-            <span className='offer-btn-1'>Resume Call</span>
+            <span className='offer-btn-1'><a href="">Book a Car</a> </span>
+            <span className='offer-btn-1'><a href="">Resume Call</a> </span>
           </div>
         </Col>
       </Row>

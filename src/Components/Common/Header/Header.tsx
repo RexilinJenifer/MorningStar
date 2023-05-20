@@ -19,7 +19,7 @@ const Header: React.FC<IHeader> = (props) => {
             <Row className='row-header'>
                 <Col md={6} sm={0} className='col-header-one'>
                     <div className='header-top-left'>
-                        <p>Need Help ? : Call: +97112345978</p>
+                        <p>Need Help ? : Call: +971 55 826 4317</p>
                     </div>
                     {/* <div className='help-desk'>
                         <img src={header} alt="" />
@@ -51,7 +51,7 @@ const Header: React.FC<IHeader> = (props) => {
                             <img src={flag} alt="Flag" />
                             <div className='region'>
                                 <span>DUBAI, UAE</span>
-                                <span>Qud Metha, Dubai</span>
+                                <span>Al Karama, Dubai</span>
                             </div>
                         </Col>
                         <Col className='sub-content icons'>

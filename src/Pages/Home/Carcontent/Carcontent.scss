@@ -2,6 +2,7 @@
     background-color: #6c757d36;
     font-family: sans-serif;
     padding: 0px 150px 0px 150px;
+    padding-top: 50px;
 
     @media screen and (max-width: 425px) {
         padding: 0px 2px 0px 18px;
@@ -63,6 +64,11 @@
                     p {
                         padding-top: 15px;
                         padding-bottom: 86px;
+
+                        @media screen and (max-width:1440px) {
+                            font-size: 14px;
+
+                        }
 
                         @media screen and (max-width:768px) {
                             font-size: 14px;

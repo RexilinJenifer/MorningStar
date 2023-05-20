@@ -19,10 +19,12 @@ const Slide: React.FC<ISlide> = (props) => {
             <Carousel>
                 <Carousel.Item>                  
                     <video src={video} muted autoPlay playsInline loop className='video-slide' />
-                    <Carousel.Caption>
+                    <Carousel.Caption className='carousel-caption'>
                         <h3 className='caption'><b>Start Your Journey with Morning Star - Get Moving, Get Going!</b></h3>
-                        <h1 className='sub-caption'><b>Start Your Journey with Morning Star Rental Cars: Where Every Mile is a Memory!</b></h1>
-                        <a href="#" className='caption-link'><b>LEARN MORE</b></a>
+                        <br />
+                        <h1 className='sub-caption'><b>Start Your Journey with Morning Star Rental Cars: </b></h1>
+                        <br />
+                        <h1 className='sub-caption'><b>Where Every Mile is a Memory!</b> </h1>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -32,10 +34,12 @@ const Slide: React.FC<ISlide> = (props) => {
                         alt="Second slide"
                     />
 
-                    <Carousel.Caption>
+                    <Carousel.Caption className='carousel-caption'>
                         <h3 className='caption'><b>Start Your Journey with Morning Star - Get Moving, Get Going!</b></h3>
-                        <h1 className='sub-caption'><b>Start Your Journey with Morning Star Rental Cars: Where Every Mile is a Memory!</b></h1>
-                        <a href="#" className='caption-link'><b>LEARN MORE</b></a>
+                        <br />
+                        <h1 className='sub-caption'><b>Start Your Journey with Morning Star Rental Cars:</b></h1>
+                        <br />
+                        <h1 className='sub-caption'><b>Where Every Mile is a Memory!</b> </h1>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -45,10 +49,13 @@ const Slide: React.FC<ISlide> = (props) => {
                         alt="Third slide"
                     />
 
-                    <Carousel.Caption>
+                    <Carousel.Caption className='carousel-caption'>
                         <h3 className='caption'><b>Start Your Journey with Morning Star - Get Moving, Get Going!</b></h3>
-                        <h1 className='sub-caption'><b>Start Your Journey with Morning Star Rental Cars: Where Every Mile is a Memory!</b></h1>
-                        <a href="#" className='caption-link'><b>LEARN MORE</b></a>
+                        <br />
+                        <h1 className='sub-caption'><b>Start Your Journey with Morning Star Rental Cars: </b></h1>
+                        <br />
+                        <h1 className='sub-caption'><b>Where Every Mile is a Memory!</b> </h1>
+
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

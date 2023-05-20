@@ -10,44 +10,64 @@
      margin-top: -10px;
  }
 
- .caption {
-     font-size: 26px;
-     color: #dee2e6;
+ .carousel-caption {
 
-     @media screen and (max-width: 1024px) {
-         font-size: 24px;
+    margin-left: -200px;
+    position: absolute;
+    color: #fff;
+    top: 30%;
+    text-align: left;
+
+    @media screen and (max-width: 1440px) {
+        margin-left: -150px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-left: -100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0px;
+    }
+     .caption {
+         font-size: 26px;
+         color: #dee2e6;
+
+         @media screen and (max-width: 1024px) {
+             font-size: 24px;
+         }
+
+
+         @media screen and (max-width: 768px) {
+             font-size: 18px;
+         }
+
+         @media screen and (max-width: 425px) {
+             font-size: 18px;
+         }
      }
 
+     .sub-caption {
+         font-size: 40px;
+         color: white;
 
-     @media screen and (max-width: 768px) {
-         font-size: 18px;
+         @media screen and (max-width: 1024px) {
+             font-size: 30px;
+         }
+
+         @media screen and (max-width: 768px) {
+             font-size: 22px;
+         }
+
+         @media screen and (max-width: 425px) {
+             font-size: 20px;
+         }
      }
 
-     @media screen and (max-width: 425px) {
-         font-size: 18px;
+     .caption-link {
+         color: white;
+         text-decoration: none;
+         font-size: 21px;
+         --bs-link-hover-color: red;
      }
- }
-
- .sub-caption {
-     font-size: 48px;
-     color: white;
-
-     @media screen and (max-width: 1024px) {
-         font-size: 30px;
-     }
-
-     @media screen and (max-width: 768px) {
-         font-size: 24px;
-     }
-
-     @media screen and (max-width: 425px) {
-         font-size: 24px;
-     }
- }
-
- .caption-link {
-     color: white;
-     text-decoration: none;
-     font-size: 21px;
-     --bs-link-hover-color: red;
  }

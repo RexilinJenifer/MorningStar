@@ -15,7 +15,6 @@ const Subscription: React.FC<ISubscription> = (props) => {
     <div className='subscribe-main'>
       <Row className='row-subscribe'>
         <Col xl={6} className='col-sub-content'>
-          {/* <div className='col-sub-content'> */}
           <h4>NEWSLETTER</h4>
           <h3>Subscribe  To Our Newsletter</h3>
           <h3>For New Updates</h3>
@@ -25,18 +24,13 @@ const Subscription: React.FC<ISubscription> = (props) => {
               <Button className='button-text' label="Subscribe Now" severity="danger" />
             </div>
           </div>
-          {/* </div> */}
         </Col>
 
         <Col xl={6} className='col-sub-image'>
-          {/* <div className='col-sub-image'> */}
           <img src={subcar} alt="" />
-          {/* </div> */}
         </Col>
 
       </Row>
-
-
     </div>
   )
 }

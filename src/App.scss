@@ -15,6 +15,7 @@
 
 //page level css
 @import url('/src/Pages/Home/Home.scss');
+@import url('/src/Pages/About/About.scss');
 @import url('/src/Pages/Gallery/Gallery.scss');
 @import url('/src/Pages/Contactus/Contact.scss');
 @import url('/src/Pages/Carrental/Cartypes.scss');
@@ -51,6 +52,7 @@ body {
             cursor: pointer;
         }
     }
+    
     
 }
 

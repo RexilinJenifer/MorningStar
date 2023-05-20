@@ -12,6 +12,7 @@ import Contact from './Pages/Contactus/Contact';
 import Blogs from './Pages/Blogs/Blogs';
 import Fleets from './Pages/Fleets/Fleets';
 import Team from './Pages/Team/Team';
+import About from './Pages/About/About';
 import { AiFillCaretUp } from 'react-icons/ai';
 
 const App = () => {
@@ -23,7 +24,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Navigate to={'/Home'} replace />} />
         <Route path='/Home' element={<Home />} />
-        <Route path='/Aboutus' element={<Home />} />
+        <Route path='/Aboutus' element={<About />} />
         <Route path='/Fleets' element={<Fleets />} />
         <Route path='/Team' element={<Team />} />
         <Route path='/Brands' element={<Home />} />
