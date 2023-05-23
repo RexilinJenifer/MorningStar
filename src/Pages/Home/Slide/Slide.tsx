@@ -1,10 +1,10 @@
 import React, { memo } from 'react'
 import redcar from "../../../Assets/Images/black.jpeg"
-import bluecar from "../../../Assets/Images/key.jpg"
+import bluecar from "../../../Assets/Images/whitecar.jpeg"
 import whitecar from "../../../Assets/Images/redcar.jpeg"
 import Carousel from 'react-bootstrap/Carousel'
 import { useState } from 'react'
-const video = require("../../../Assets/video/car.mp4");
+const video = require("../../../Assets/video/video2.mp4");
 // import video from "../../../Assets/video/car";
 
 

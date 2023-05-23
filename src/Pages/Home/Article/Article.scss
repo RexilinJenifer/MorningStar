@@ -46,29 +46,43 @@
 
         .content-article {
             height: 551px;
+            padding-left: 70px;
+            padding-right: 30px;
 
             @media screen and (max-width:425px) {
                 height: 590px;
 
             }
 
-            img {
-                height: 294px;
+            @media screen and (max-width:1440px) {
+                padding-left: 0px;
+                padding-right: 0px;
+
             }
 
-            .article-text {
-                color: #010508;
+            .card {
+                width: 100%;
+
+                img {
+                    height: 294px;
+                }
+
+                .article-text {
+                    color: #010508;
+                }
+
+                .article-title {
+                    font-weight: 700;
+                }
+
+                .article-link {
+                    color: #210B6E;
+                    text-decoration: underline;
+                    font-weight: 600;
+                }
             }
 
-            .article-title {
-                font-weight: 700;
-            }
 
-            .article-link {
-                color: #210B6E;
-                text-decoration: underline;
-                font-weight: 600;
-            }
         }
 
     }

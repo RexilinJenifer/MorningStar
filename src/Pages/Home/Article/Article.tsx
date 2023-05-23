@@ -16,7 +16,7 @@ const Article: React.FC<IArticle> = (props) => {
             <h4>HELPS YOU TO FIND A PERFECT CAR</h4>
             <h3>NEWS & <span>ARTICLE</span></h3>
             <Row className='row-article'>
-                <Col xl={3}>
+                <Col xl={4}>
                     <div className='content-article'>
                         <Card>
                             <Card.Img variant="top"  src={art1} />
@@ -34,7 +34,7 @@ const Article: React.FC<IArticle> = (props) => {
                     </div>
 
                 </Col>
-                <Col xl={3}>
+                <Col xl={4}>
                     <div className='content-article'>
                         <Card>
                             <Card.Img variant="top" src={art2} />
@@ -51,7 +51,7 @@ const Article: React.FC<IArticle> = (props) => {
                         </Card>
                     </div>
                 </Col>
-                <Col xl={3}>
+                <Col xl={4}>
                     <div className='content-article'>
                         <Card>
                             <Card.Img variant="top" src={art3} />

@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import { Col, Row } from 'react-bootstrap';
 import { Carousel } from 'primereact/carousel';
 import { FaGreaterThan } from "react-icons/fa";
@@ -120,6 +120,9 @@ const Booking: React.FC<IAbout> = (props) => {
         },
     ]
 
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
 
     const productTemplate = (product: any) => {
         return (
@@ -315,7 +318,7 @@ const Booking: React.FC<IAbout> = (props) => {
                 <h4>HELPS YOU TO FIND A PERFECT CAR</h4>
                 <h3>NEWS & <span>ARTICLE</span></h3>
                 <Row className='row-article'>
-                    <Col xl={3}>
+                    <Col xl={4}>
                         <div className='content-article'>
                             <Card>
                                 <Card.Img variant="top" src={art1} />
@@ -333,7 +336,7 @@ const Booking: React.FC<IAbout> = (props) => {
                         </div>
 
                     </Col>
-                    <Col xl={3}>
+                    <Col xl={4}>
                         <div className='content-article'>
                             <Card>
                                 <Card.Img variant="top" src={art2} />
@@ -350,7 +353,7 @@ const Booking: React.FC<IAbout> = (props) => {
                             </Card>
                         </div>
                     </Col>
-                    <Col xl={3}>
+                    <Col xl={4}>
                         <div className='content-article'>
                             <Card>
                                 <Card.Img variant="top" src={art3} />

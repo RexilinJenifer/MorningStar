@@ -17,9 +17,6 @@
     }
 }
 
-.p-carousel-indicators {
-    margin-bottom: 90px;
-}
 
 .about-main {
     @media screen and (max-width: 768px) {
@@ -685,6 +682,12 @@
             font-weight: 600;
             text-align: center;
         }
+
+        .carousel-parent {
+            .p-carousel-indicators {
+                margin-bottom: 90px;
+            }
+        }
     }
 
     .about-subscribe-main {
@@ -897,10 +900,18 @@
 
             .content-article {
                 height: 551px;
+                padding-left: 70px;
+                padding-right: 30px;
 
                 @media screen and (max-width:425px) {
                     height: 590px;
 
+                }
+
+                @media screen and (max-width:1440px) {
+                    padding-left: 0px;
+                    padding-right: 0px;
+    
                 }
 
                 .card {
